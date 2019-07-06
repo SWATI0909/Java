@@ -1,0 +1,14 @@
+import java.util.Scanner;
+class conApp
+{
+	public static void main(String a[])
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter number1");
+		int x=sc.nextInt();
+		System.out.print("Enter number2");
+		int y=sc.nextInt();
+		int z=x+y;
+		System.out.print("Result is: "+z);
+	}
+}
