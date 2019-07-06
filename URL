@@ -1,0 +1,16 @@
+import java.net.URL;
+import java.util.Scanner;
+import java.io.File;
+class conApp{
+	public static void main(String a[]) throws Exception
+{
+	Scanner sc1= new Scanner(System.in);
+	System.out.print("Enter zodiac sign");
+	String sign=sc1.next();
+	Scanner sc2=new Scanner(new URL("https://www.ganeshaspeaks.com/horoscopes/daily-horoscope/sign="+sign).openStream());
+	while(sc2.hasNextLine())
+	{
+		String ln=sc2.nextLine();
+		System.out.println(ln);	
+	}	
+}}
